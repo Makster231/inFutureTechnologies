@@ -1,0 +1,205 @@
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -webkit-linear-gradient(top, white, black);
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
+@media screen and (max-width: 1270px ) {
+    /*HEADER*/
+    #header {
+        background: url("../images/headerBg.png") center no-repeat;
+        background-size: cover;
+    }
+
+    .main-menu ul li a {
+        padding: 1.5rem;
+    }
+
+    /*JOIN US SECTION*/
+    section#ourTeam {
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 1024px ) {
+
+    * {
+        -webkit-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+    }
+
+    .selectBox:before {
+        right: 190px;
+    }
+
+    /*HEADER*/
+    .main-menu ul li a {
+        padding: 1rem;
+    }
+
+    .header-bottom h1 {
+        font-size: 4rem;
+    }
+
+    .topLogo img {
+        margin: 0 1rem;
+    }
+    /*JOIN US*/
+    section#joinUs {
+        background: url("../images/bgJoinUs.png") right no-repeat;
+        background-size: cover;
+    }
+
+    /*SERVICES*/
+    section#Support h1::after {
+        left: 43%;
+        width: 14%;
+    }
+
+}
+
+@media screen and (max-width: 860px ) {
+    /*HEADER*/
+    #menu-burger-button + nav label {
+        display: block;
+    }
+
+
+    .main-menu {
+        display: none;
+    }
+
+    .header-bottom h1 {
+        font-size: 3rem;
+    }
+
+    .selectBox:before {
+        right: 160px;
+    }
+
+    section#services .block .price,
+    section#services .block .getIt,
+    section#services .block .timeToDo {
+        padding: .375rem .975rem;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    /*HEADER*/
+    .header-bottom h1 {
+        font-size: 2.5rem;
+    }
+
+    .selectBox:before {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    * {
+        -webkit-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+    }
+
+    section#ourTeam .teamMembers ul li:hover {
+        -webkit-transform: scale(1.1, 1.1);
+            -ms-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+    }
+
+    /*JOIN US SECTION*/
+    section#ourTeam {
+        height: 1650px;
+    }
+
+    /*HEADER*/
+    .header-bottom h1 {
+        font-size: 2rem;
+    }
+
+    .photoLogo{
+        display: none;
+    }
+    /*JOIN US*/
+    section#joinUs {
+        padding: 1.5rem;
+    }
+
+    section#joinUs .joinUsButton button {
+        padding: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        color: #f6f6f6;
+    }
+
+    /*Contacts*/
+    section#contacts {
+        text-align: center !important;
+    }
+
+    /*JOIN US*/
+    section#joinUs h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    /*JOIN US*/
+    section#contacts span {
+        margin-top: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    section#contacts img {
+        margin: 3rem 0 2rem 0;
+    }
+
+}
+
+@media screen and (max-width: 478px) {
+    * {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    /*HEADER*/
+    .header-bottom h1 {
+        font-size: 1.5rem;
+    }
+
+    /*JOIN US*/
+    section#joinUs h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    /*JOIN US*/
+    section#contacts span {
+        margin-top: 1.3rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    footer img {
+        width: 10% !important;
+        cursor: pointer;
+    }
+
+    footer .foot {
+        margin-left: 0;
+        -webkit-box-pack: justify !important;
+            -ms-flex-pack: justify !important;
+                justify-content: space-between !important;
+    }
+
+}
